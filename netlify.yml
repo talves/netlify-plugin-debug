@@ -2,13 +2,13 @@ build:
   publish: public
   functions: functions
 
-  # lifecycle:
-  #   init:
-  #     - echo "Starting the build"
-  #   build:
-  #     - echo "hello world"
-  #   finally:
-  #     - echo "Ending the build"
+  lifecycle:
+    init:
+      - echo "Starting the build"
+    build:
+      - echo "hello world"
+    finally:
+      - echo "Ending the build"
 
 plugins:
   debugPlugin:
