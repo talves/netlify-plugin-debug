@@ -1,0 +1,7 @@
+{
+  "name": "debug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Tony Alves <tony@3alves.com> (https://www.3alves.com/)",
+  "license": "MIT"
+}
