@@ -8,6 +8,6 @@
     "build:dry": "netlify build --dry --verbose"
   },
   "devDependencies": {
-    "netlify-cli": "^2.19.3"
+    "netlify-cli": "^2.19.4"
   }
 }
