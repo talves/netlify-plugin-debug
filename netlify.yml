@@ -11,5 +11,4 @@ build:
       - echo "Ending the build"
 
 plugins:
-  debugPlugin:
-    type: ./plugins/debug
+  - type: ./plugins/debug
