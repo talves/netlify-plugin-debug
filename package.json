@@ -5,9 +5,10 @@
   "author": "Tony Alves <tony@3alves.com> (https://www.3alves.com/)",
   "license": "MIT",
   "scripts": {
-    "build:dry": "netlify build --dry --verbose"
+    "build:dry": "netlify build --dry --verbose",
+    "build": "netlify build"
   },
   "devDependencies": {
-    "netlify-cli": "^2.19.4"
+    "netlify-cli": "^2.20.1"
   }
 }
