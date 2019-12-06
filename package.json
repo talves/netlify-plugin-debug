@@ -9,6 +9,6 @@
     "build": "netlify build"
   },
   "devDependencies": {
-    "netlify-cli": "^2.20.1"
+    "netlify-cli": "^2.23.0"
   }
 }
