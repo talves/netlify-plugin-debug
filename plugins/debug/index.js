@@ -100,11 +100,11 @@ function pluginDebug(config) {
     onSuccess: options => {
       console.log("Sucessful Build! ✨🚀✨");
       // formatPrint(options);
-    }
+    },
     onError: options => {
       console.log("Unsucessful Build 👎☠💀");
       // formatPrint(options);
-    }
+    },
     onEnd: options => {
       console.log("Site build finished, site deployed! 🚀");
       // formatPrint(options);
