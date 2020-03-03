@@ -2,39 +2,43 @@ function pluginDebug(config) {
   return {
     name: "debug-plugin",
     // Hook into lifecycles
-    init: () => {
-      console.log("Build Starting 🔥");
+    onInit: () => {
+      console.log("[onInit:init] Build Starting 🔥");
     },
-    getCache: () => {
-      console.log("Fetching the last build’s cache 🐾");
+    onGetCache: () => {
+      console.log("[onGetCache:getCache] Fetching the last build’s cache 🐾");
     },
-    install: () => {
-      console.log("Project dependencies are installing ⚙");
+    onInstall: () => {
+      console.log("[onInstall:install] Project dependencies are installing ⚙");
     },
-    preBuild: () => {
+    onPreBuild: () => {
       console.log(
-        "Prior to building the functions and running the build commands 🎢"
+        "[onPreBuild:preBuild] Prior to building the functions and running the build commands 🎢"
       );
     },
-    functionsBuild: () => {
+    onFunctionsBuild: () => {
       console.log(
-        "Serverless functions are building, if they exist on the site 🧨"
+        "[onFunctionsBuild:functionsBuild] Serverless functions are building, if they exist on the site 🧨"
       );
     },
-    build: () => {
-      console.log("Build commands are executing ✨");
+    onBuild: () => {
+      console.log("[onBuild:build] Build commands are executing ✨");
     },
-    preDeploy: () => {
-      console.log("Prior to the built package being deployed 🔮");
+    onPreDeploy: () => {
+      console.log(
+        "[onPreDeploy:preDeploy] Prior to the built package being deployed 🔮"
+      );
     },
-    package: () => {
-      console.log("Packaging site to be deployed 🎁");
+    onFunctionsPackage: () => {
+      console.log(
+        "[onFunctionsPackage:package] Packaging functions to be deployed 🎁"
+      );
     },
-    saveCache: () => {
-      console.log("Saving cached assets 🎨");
+    onSaveCache: () => {
+      console.log("[onSaveCache:saveCache] Saving cached assets 🎨");
     },
-    finally: () => {
-      console.log("Site build finished, site deployed! 🚀");
+    onEnd: () => {
+      console.log("[onEnd:finally] Site build finished, site deployed! 🚀");
     }
   };
 }
