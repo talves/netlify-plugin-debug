@@ -12,4 +12,4 @@ build:
 
 plugins:
   - id: debugPlugin
-    type: ./plugins/debug
+    package: ./plugins/debug
