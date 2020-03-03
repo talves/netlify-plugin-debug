@@ -11,5 +11,9 @@ build:
       - echo "Ending the build"
 
 plugins:
-  - id: debugPlugin
-    package: ./plugins/debug
+  - package: ./plugins/debug
+    id: debugPlugin
+    config:
+      options: {
+        message: 'We ❤ Netlify!'
+      }

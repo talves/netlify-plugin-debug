@@ -4,6 +4,7 @@ function pluginDebug(config) {
     // Hook into lifecycles
     onInit: () => {
       console.log("[onInit:init] Build Starting 🔥");
+      console.log(`${config.options && config.options.message}`);
     },
     onGetCache: () => {
       console.log("[onGetCache:getCache] Fetching the last build’s cache 🐾");

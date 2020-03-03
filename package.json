@@ -1,6 +1,6 @@
 {
   "name": "netlify-plugin-debug",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "author": "Tony Alves <tony@3alves.com> (https://www.3alves.com/)",
   "license": "MIT",
@@ -9,6 +9,6 @@
     "build": "netlify build"
   },
   "devDependencies": {
-    "netlify-cli": "^2.23.0"
+    "netlify-cli": "^2.36.0"
   }
 }
