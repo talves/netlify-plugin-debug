@@ -77,14 +77,15 @@ function pluginDebug(config) {
       console.log("Prior to the built artifacts being deployed 🔮");
       // formatPrint(options);
     },
-    onDeploy: options => {
-      console.log("Built artifacts are deployed 🔮");
-      // formatPrint(options);
-    },
-    onPostDeploy: options => {
-      console.log("After built artifacts being deployed 🔮");
-      // formatPrint(options);
-    },
+    // onDeploy, onPostDeploy not implemented yet
+    // onDeploy: options => {
+    //   console.log("Built artifacts are deployed 🔮");
+    //   // formatPrint(options);
+    // },
+    // onPostDeploy: options => {
+    //   console.log("After built artifacts being deployed 🔮");
+    //   // formatPrint(options);
+    // },
     onPreSaveCache: options => {
       console.log("Prior to saving cached assets 🎨");
       // formatPrint(options);
