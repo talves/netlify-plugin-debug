@@ -16,22 +16,22 @@ function pluginDebug(config) {
         "[onPreBuild:preBuild] Prior to building the functions and running the build commands 🎢"
       );
     },
+    onBuild: () => {
+      console.log("[onBuild:build] Build commands are executing ✨");
+    },
     onFunctionsBuild: () => {
       console.log(
         "[onFunctionsBuild:functionsBuild] Serverless functions are building, if they exist on the site 🧨"
       );
     },
-    onBuild: () => {
-      console.log("[onBuild:build] Build commands are executing ✨");
+    onFunctionsPackage: () => {
+      console.log(
+        "[onFunctionsPackage:package] Packaging functions to be deployed 🎁"
+      );
     },
     onPreDeploy: () => {
       console.log(
         "[onPreDeploy:preDeploy] Prior to the built package being deployed 🔮"
-      );
-    },
-    onFunctionsPackage: () => {
-      console.log(
-        "[onFunctionsPackage:package] Packaging functions to be deployed 🎁"
       );
     },
     onSaveCache: () => {
