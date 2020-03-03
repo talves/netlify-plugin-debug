@@ -3,11 +3,11 @@ build:
   functions: functions
 
   lifecycle:
-    init:
+    onInit:
       - echo "Starting the build"
-    build:
+    onBuild:
       - echo "hello world"
-    finally:
+    onEnd:
       - echo "Ending the build"
 
 plugins:
